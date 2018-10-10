@@ -122,6 +122,10 @@ public class ThieveHandle extends Handler
                 break;
 
             case LOWHP:
+                //@Standard
+                // This looks a bit messy. You could use an enum here again,
+                // or an iterrable map of some sort, and iterate over it,
+                // instead of all these if else's.
                 if(api.inventory.contains(food))
                 {
                     api.inventory.getItem(food).interact();

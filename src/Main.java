@@ -95,6 +95,10 @@ public class Main extends Script
             stateHandler.handleNextState();
         }
 
+        //@Standard
+        // This is a "magic number". 200 doesnt mean anythign to someone reading
+        // your code. This should be a constant variable isntead, and it should
+        // be annotated with comments explaingn its use and value.
         return 200;
     }
 
@@ -109,6 +113,9 @@ public class Main extends Script
 
     public void onPaint(Graphics2D g)
     {
+        //@Standard
+        // Usually for unimplemented functions, you should leave a comment as follows:
 
+        // @Unimplemented 08/10/16 -> Planned for implementation xx/xx/xx - Chris
     }
 }

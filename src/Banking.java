@@ -39,7 +39,10 @@ public class Banking
             return true;
         }
         else
+        { // @Standard Use of a consistant bracing style is important to aid readability of code.
+          // This else statement did net have brackets before.
             return false;
+        }
     }
 
     /**
@@ -50,6 +53,9 @@ public class Banking
     public Area getClosestBank()
     {
         Area closestBank = null;
+        // @Standard Since this is a constant array ( in that it does not change
+        // between function calls ), you probably should make it a private class field.
+        // Having it in this function is cluttering to the code.
         Area[] banks =
                 {
                         Banks.AL_KHARID,
@@ -75,6 +81,7 @@ public class Banking
             for(int i = 0; i < l; i ++)
             {
                 Area currBank = banks[i];
+                // @Standard again, consistant bracing style is important
                 if(closestBank == null)
                     closestBank = currBank;
                 else
